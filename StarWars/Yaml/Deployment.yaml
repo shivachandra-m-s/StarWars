@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: eshop
+  template:
+    metadata:
+      labels:
+        app: eshop
+        component: frontend
+    spec:
+      containers:
+      - name: webapi
+        image: ponkumarpandian/webapi:latest
+        ports:
+        - containerPort: 8080
