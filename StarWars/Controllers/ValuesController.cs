@@ -13,7 +13,7 @@ namespace StarWars.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Tambor", "Jedi", "Teebo" }; //Teedo
+            return new string[] { "Tambor", "Jedi", "Teebo" }; //Teedo,Knight
         }
 
         // GET api/values/5
