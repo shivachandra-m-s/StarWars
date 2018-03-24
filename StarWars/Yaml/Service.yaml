@@ -1,8 +1,8 @@
-apiVersion: v1
+apiVersion: latest
 kind: Service
 metadata:
   labels:
-    app: eshop
+    app: starwars
     component: frontend
   name: frontend
 spec:
@@ -10,6 +10,6 @@ spec:
   - port: 80
     targetPort: 8080
   selector:
-    app: eshop
+    app: starwars
     component: frontend
   type: LoadBalancer

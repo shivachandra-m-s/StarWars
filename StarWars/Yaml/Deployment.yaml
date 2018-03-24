@@ -1,19 +1,19 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/latest
 kind: Deployment
 metadata:
   name: frontend
 spec:
   selector:
     matchLabels:
-      app: eshop
+      app: starwars
   template:
     metadata:
       labels:
-        app: eshop
+        app: starwars
         component: frontend
     spec:
       containers:
-      - name: webapi
-        image: ponkumarpandian/webapi:latest
+      - name: starwars
+        image: shivachandra-m-s/starwars:latest
         ports:
         - containerPort: 8080
