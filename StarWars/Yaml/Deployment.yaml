@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: frontend
+  name: starwars-fe
 spec:
   selector:
     matchLabels:
@@ -10,7 +10,7 @@ spec:
     metadata:
       labels:
         app: starwars
-        component: frontend
+        component: starwars-fe
     spec:
       containers:
       - name: starwars
