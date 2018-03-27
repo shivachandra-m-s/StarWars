@@ -3,13 +3,13 @@ kind: Service
 metadata:
   labels:
     app: starwars
-    component: starwars-fe
-  name: starwars-fe
+    component: starwarsfe
+  name: starwarsfe
 spec:
   ports:
   - port: 80
     targetPort: 8080
   selector:
     app: starwars
-    component: starwars-fe
+    component: starwarsfe
   type: LoadBalancer
