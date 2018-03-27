@@ -17,5 +17,3 @@ spec:
         image: startwarsacr.azurecr.io/starwars:latest
         ports:
         - containerPort: 8080
-        imagePullSecrets:
-        - name: starwarsregsecret
