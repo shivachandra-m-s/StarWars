@@ -18,7 +18,7 @@ RUN ["dotnet", "build"]
 #RUN dotnet publish -c Release -o /publish
 
  
-ENV ASPNETCORE_URLS http://*:8080
+#ENV ASPNETCORE_URLS http://*:8080
 
 
 #EXPOSE 9000/tcp

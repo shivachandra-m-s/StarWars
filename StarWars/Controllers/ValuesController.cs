@@ -11,6 +11,8 @@ namespace StarWars.Controllers
     {
         // GET api/values
         [HttpGet]
+        [Route("/api/Values")]
+        [Route("/")]
         public IEnumerable<string> Get()
         {
             return new string[] { "Tambor", "Jedi", "Teebo", "Knight"  }; //Teedo,Knight
